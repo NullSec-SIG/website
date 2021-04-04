@@ -7,7 +7,7 @@ class Navbar extends Component {
     console.log(process.env.PUBLIC_URL + "/assets/logo.jpg");
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-black">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand ml-lg-5" to="/">
           <img
             className="logo-img"
             src={process.env.PUBLIC_URL + "/assets/logo.jpg"}
@@ -29,13 +29,21 @@ class Navbar extends Component {
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <div className="navbar-nav">
+          <div className="navbar-nav mr-lg-5">
             <NavLink className="nav-item nav-link" to="/blog">
               Blog
             </NavLink>
-            <span className="nav-item nav-link d-sm-flex d-none">|</span>
-            <NavLink className="nav-item nav-link" to="/signup">
-              Sign Up
+            <span className="nav-item nav-link d-sm-flex d-none text-muted">
+              •
+            </span>
+            <NavLink className="nav-item nav-link" to="/exco">
+              Exco
+            </NavLink>
+            <span className="nav-item nav-link d-sm-flex d-none text-muted">
+              •
+            </span>
+            <NavLink className="nav-item nav-link" to="/contact">
+              Contact
             </NavLink>
           </div>
         </div>
