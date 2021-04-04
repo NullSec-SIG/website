@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap");
+
+body {
+  font-family: "Source Code Pro", monospace !important;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.logo-img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.title {
+  height: calc(100vh - 66px);
+}
